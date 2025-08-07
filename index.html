@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Saniya 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 100px 20px 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-family: 'Great Vibes', cursive;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .image-container {
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .quote {
+      margin-top: 40px;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .heart-button {
+      margin-top: 40px;
+      background: #ff4d6d;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .heart-button:hover {
+      background: #ff3355;
+    }
+
+    .secret-message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.1em;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <header>
+    <h1>Hey Saniya 🌸</h1>
+    <p>You’re the melody in every Arijit song and the drama I never want to skip...</p>
+  </header>
+
+  <div class="image-container">
+    <img src="saniya.jpg" alt="Saniya's Beautiful Smile" />
+  </div>
+
+  <div class="quote">
+    “There is magic in ur eyes that can capture anyone's heart ❤️.”<br />
+    — Pakistani Drama Vibes
+  </div>
+
+  <button class="heart-button" onclick="showMessage()">💖 Tap to Reveal 💖</button>
+
+  <div class="secret-message" id="message">
+    Saniya, I made this just for you...<br />
+    Because you’re more beautiful than a perfect song,<br />
+    And more special than any drama twist.<br />
+    You make the world a little more magical 💫
+  </div>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById('message');
+      msg.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
